@@ -1,0 +1,661 @@
+/* Home */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home-page {
+    background-color: #000;
+	color: #fff;
+    max-height: 50vh;
+	display: flex;
+	flex-direction: column;
+}
+
+/* menu */
+.navbar-home {
+    padding: 20px 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar-home ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar-home a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.navbar-home a:hover, .navbar-home a.active {
+    opacity: 0.6;
+	color: #ff8c00;
+}
+
+/* main panel */
+.main-panel {
+	flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px; /* prostor pro footer */
+}
+.image-container {
+    position: relative;
+    width: 100%;
+	height: 60vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+	overflow: hidden;
+}
+.home-photo {
+    width: 100%;
+    height: 100%;
+	object-fit: cover;
+	object-position: center;
+	filter: blur(3px); 
+	transform: scale(1.1);
+}
+/* home texty */
+.band-title {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Rock Salt', cursive;
+    font-size: 3rem;
+    color: #ff8c00;
+    text-shadow: 0 0 20px rgba(0,0,0,0.8); /* Aby byl nápis čitelný na fotce */
+    white-space: nowrap;
+}
+
+.home-footer {
+    margin-top: auto;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.listen-to-us {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 2rem;
+    color: #ff8c00;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+	text-align: center;
+}
+
+.listen-to-us:hover {
+    opacity: 0.6;
+	color: #ff8c00;
+}
+
+/* Přizpůsobení pro mobily */
+@media (max-width: 768px) {
+    .main-panel {
+        width: 90%; /* Na mobilu zabere bílý panel víc místa */
+    }
+    .band-title {
+        font-size: 1.8rem;
+    }
+}
+
+/*supermodel*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body-s {
+    background-color: #48a3a6; /* Tyrkysové pozadí z obrázku */
+    color: #000;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+/* menu */
+.navbar-s {
+    padding: 20px 0;
+    width: 100%;
+    z-index: 10;
+	background-color: #000;
+}
+
+.navbar-s ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar-s a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.navbar-s a:hover, .navbar-s a.active {
+    opacity: 0.6;
+	color: #ffffcc;
+}
+/* content-s */
+.content-s {
+	margin: 10px;
+	flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	text-align: center;
+    padding-bottom: 50px; /* prostor pro footer */
+}
+
+/* s texty */
+.band-name {
+	font-family: 'Reenie Beanie', cursive;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.album-s {
+    font-family: 'Akatab', sans-serif;
+	color: #ffffcc;
+    font-size: 4rem;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.tracklist ul {
+    list-style: none;
+    font-family: 'Mynerve', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Spodní část s obalem */
+.footer-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.album-cover {
+    width: 180px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.listen-link-s {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 2rem;
+    color: #ffffcc;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.listen-link-s:hover {
+    transform: scale(1.1);
+}
+
+/* Responzivita pro mobily */
+@media (max-width: 768px) {
+    .illustration {
+        display: none; /* Skryje ilustrace na malých displejích, aby nepřekážely textu */
+    }
+    .album-s {
+        font-size: 2.5rem;
+    }
+}
+
+
+
+
+/* shc */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.shc-page {
+	background-color: #1a1a1a; /* Tmavé pozadí podle náhledu */
+    color: #fff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+/* menu */
+.navbar-shc {
+    padding: 20px 0;
+    width: 100%;
+    z-index: 10;
+	background-color: #000;
+}
+
+.navbar-shc ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar-shc a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.navbar-shc a:hover, .navbar-shc a.active {
+    opacity: 0.6;
+	color: #ff0066;
+}
+/* content-shc */
+.content-shc {
+	margin: 10px;
+	flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	text-align: center;
+    padding-bottom: 50px; /* prostor pro footer */
+}
+
+/* shc texty */
+.band-name {
+	font-family: 'Reenie Beanie', cursive;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.album-shc {
+	font-family: 'Qwitcher Grypen', cursive;
+    margin: 10px 0 40px 0;
+    color: #ff99cc;
+    font-size: 5rem;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.tracklist-shc ul {
+    list-style: none;
+    font-family: 'Mynerve', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Spodní část s obalem */
+.footer-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.shc-cover {
+    width: 180px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+.listen-link-shc {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 2rem;
+    color: #ff0066;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.listen-link-shc:hover {
+    transform: scale(1.1);
+}
+
+/* Responzivita pro mobily */
+@media (max-width: 768px) {
+    .illustration {
+        display: none; /* Skryje ilustrace na malých displejích, aby nepřekážely textu */
+    }
+    .album-shc {
+        font-size: 2.5rem;
+    }
+}
+
+
+
+/* --- TORCHES PAGE --- */
+
+.body-t {
+    background-color: #f0f0f0; /* Světlé pozadí typické pro Torches */
+    color: #000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigace Torches */
+.navbar-t {
+    padding: 20px 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #000;
+}
+
+.navbar-t ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar-t a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 1.5rem;
+	letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.navbar-t a:hover, .navbar-t a.active {
+    color: #ffcc00;
+    opacity: 0.6;
+}
+
+/* Obsah Torches */
+.content-t {
+    margin: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.album-t {
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 6rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #ffcc00;
+    margin: 10px 0 20px 0;
+    letter-spacing: 10px;
+}
+
+.tracklist-t ul {
+    list-style: none;
+    font-family: 'Mynerve', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.torches-cover {
+    width: 180px;
+    margin-bottom: 10px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.listen-link-t {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 2rem;
+    color: #ffcc00;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.listen-link-t:hover {
+    transform: scale(1.1);
+}
+
+/* Responzivita */
+@media (max-width: 768px) {
+    .album-t {
+        font-size: 3.5rem;
+        letter-spacing: 5px;
+    }
+    
+    .navbar-t ul {
+        gap: 15px;
+    }
+    
+    .navbar-t a {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
+/* --- PARADISE STATE OF MIND PAGE --- */
+
+.body-psom {
+    background-color: #000066;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigace PSOM */
+.navbar-psom {
+    padding: 20px 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #000;
+}
+
+.navbar-psom ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar-psom a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.navbar-psom a:hover, .navbar-psom a.active {
+    color: #99cc00;
+    opacity: 0.8;
+}
+
+/* Obsah PSOM */
+.content-psom {
+    margin: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.album-psom {
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 5rem;
+    font-weight: 100;
+	font-style: italic;
+    text-transform: uppercase;
+    color: #b38600;
+    margin: 10px 0 20px 0;
+    letter-spacing: 12px;
+    line-height: 1.1;
+}
+
+.tracklist-psom ul {
+    list-style: none;
+    font-family: 'Mynerve', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.psom-cover {
+    width: 180px;
+    margin-bottom: 10px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.listen-link-psom {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 2rem;
+    color: #99cc00;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.listen-link-psom:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 10px rgba(240, 198, 116, 0.5);
+}
+
+/* Responzivita */
+@media (max-width: 768px) {
+    .album-psom {
+        font-size: 2.8rem;
+        letter-spacing: 6px;
+    }
+    
+    .navbar-psom ul {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0 10px;
+    }
+}
+
+
+
+
+
+/* --- TORCHES X PAGE --- */
+
+.body-tx {
+    background-color: #fff; /* Temnější pozadí než u základního alba */
+    color: #000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigace Torches X */
+.navbar-tx {
+    padding: 20px 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #000;
+}
+
+.navbar-tx ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar-tx a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 1.5rem;
+    transition: 0.3s;
+	letter-spacing: 1px;
+}
+
+.navbar-tx a:hover, .navbar-tx a.active {
+    color: #ff9900;
+    opacity: 0.6;
+}
+
+/* Obsah Torches X */
+.content-tx {
+    margin: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.album-tx {
+    font-family: 'New Rocker', sans-serif;
+    font-size: 5rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #ffbf00;
+    margin: 10px 0 20px 0;
+    letter-spacing: 10px;
+}
+
+.anniversary-label {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 1.5rem;
+    color: #ff9900;
+    margin-bottom: 30px;
+}
+
+.tracklist-tx ul {
+    list-style: none;
+    font-family: 'Mynerve', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.tx-cover {
+    width: 180px;
+    box-shadow: 0 0 40px rgba(255, 153, 0, 0.15); /* Jemná oranžová záře */
+    margin-bottom: 10px;
+}
+
+.listen-link-tx {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 2rem;
+    color: #ff9900;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.listen-link-tx:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 10px rgba(255, 153, 0, 0.5);
+}
+
+/* Responzivita */
+@media (max-width: 768px) {
+    .album-tx {
+        font-size: 3.5rem;
+        letter-spacing: 8px;
+    }
+}
